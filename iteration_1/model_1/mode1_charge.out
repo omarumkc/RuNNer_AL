@@ -1,0 +1,65 @@
+ -------------------------------------------------------------
+ ---------------------- Welcome to the -----------------------
+     RuNNer Neural Network Energy Representation - RuNNer     
+ ----------  (c) 2008-2022 Prof. Dr. Joerg Behler   ----------
+ ----------  Georg-August-Universitaet Goettingen   ----------
+ ----------           Theoretische Chemie           ----------
+ ----------              Tammannstr. 6              ----------
+ ----------        37077 Goettingen, Germany        ----------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+  This program is free software: you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the 
+  Free Software Foundation, either version 3 of the License, or 
+  (at your option) any later version.
+    
+  This program is distributed in the hope that it will be useful, but 
+  WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License 
+  for more details.
+      
+  You should have received a copy of the GNU General Public License along
+  with this program. If not, see http://www.gnu.org/licenses. 
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ When using RuNNer, please cite the following papers:
+ J. Behler, Angew. Chem. Int. Ed. 56, 12828 (2017).
+ J. Behler, Int. J. Quant. Chem. 115, 1032 (2015).
+ -------------------------------------------------------------
+ Whenever using high-dimensional NNPs irrespective of the Code please cite:
+ J. Behler and M. Parrinello, Phys. Rev. Lett. 98, 146401 (2007).
+ -------------------------------------------------------------
+ The reference for the atom-centered symmetry functions is:
+ J. Behler, J. Chem. Phys. 134, 074106 (2011).
+ -------------------------------------------------------------
+ For high-dimensional NNs including electrostatics:
+ N. Artrith, T. Morawietz, and J. Behler, Phys. Rev. B 83, 153101 (2011).
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ RuNNer has been written by Joerg Behler
+  
+ *** with contributions from some friends ***
+  
+ Tobias Morawietz - Nguyen Widrow weights and electrostatic screening
+ Jovan Jose Kochumannil Varghese - Pair symmetry functions and pair NNPs
+ Michael Gastegger and Philipp Marquetand - element decoupled Kalman filter
+ Andreas Singraber - more efficient symmetry function type 3 implementation
+ Sinja Klees and Mariana Rossi - some infrastructure for i-Pi compatibility
+ Emir Kocer - Symmetry function groups
+ Fenfei Wei and Emir Kocer - Hessian, frequencies and normal modes
+ Alexander Knoll - vdW corrections long ranged
+ Marco Eckhoff - spin-dependent atom-centered symmetry functions
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ General job information:
+ -------------------------------------------------------------
+ Executing host    : KC-CHM-4KL63CY      
+ User name         : mffn3               
+ Starting date     : 13. 2.2025
+ Starting time     : 15 h 40 min 
+ Working directory :                                                             
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ Serial run requested
+ -------------------------------------------------------------
+ Error: 2 total energies given for structure          142

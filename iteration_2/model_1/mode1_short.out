@@ -1,0 +1,295 @@
+ -------------------------------------------------------------
+ ---------------------- Welcome to the -----------------------
+     RuNNer Neural Network Energy Representation - RuNNer     
+ ----------  (c) 2008-2022 Prof. Dr. Joerg Behler   ----------
+ ----------  Georg-August-Universitaet Goettingen   ----------
+ ----------           Theoretische Chemie           ----------
+ ----------              Tammannstr. 6              ----------
+ ----------        37077 Goettingen, Germany        ----------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+  This program is free software: you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the 
+  Free Software Foundation, either version 3 of the License, or 
+  (at your option) any later version.
+    
+  This program is distributed in the hope that it will be useful, but 
+  WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License 
+  for more details.
+      
+  You should have received a copy of the GNU General Public License along
+  with this program. If not, see http://www.gnu.org/licenses. 
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ When using RuNNer, please cite the following papers:
+ J. Behler, Angew. Chem. Int. Ed. 56, 12828 (2017).
+ J. Behler, Int. J. Quant. Chem. 115, 1032 (2015).
+ -------------------------------------------------------------
+ Whenever using high-dimensional NNPs irrespective of the Code please cite:
+ J. Behler and M. Parrinello, Phys. Rev. Lett. 98, 146401 (2007).
+ -------------------------------------------------------------
+ The reference for the atom-centered symmetry functions is:
+ J. Behler, J. Chem. Phys. 134, 074106 (2011).
+ -------------------------------------------------------------
+ For high-dimensional NNs including electrostatics:
+ N. Artrith, T. Morawietz, and J. Behler, Phys. Rev. B 83, 153101 (2011).
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ RuNNer has been written by Joerg Behler
+  
+ *** with contributions from some friends ***
+  
+ Tobias Morawietz - Nguyen Widrow weights and electrostatic screening
+ Jovan Jose Kochumannil Varghese - Pair symmetry functions and pair NNPs
+ Michael Gastegger and Philipp Marquetand - element decoupled Kalman filter
+ Andreas Singraber - more efficient symmetry function type 3 implementation
+ Sinja Klees and Mariana Rossi - some infrastructure for i-Pi compatibility
+ Emir Kocer - Symmetry function groups
+ Fenfei Wei and Emir Kocer - Hessian, frequencies and normal modes
+ Alexander Knoll - vdW corrections long ranged
+ Marco Eckhoff - spin-dependent atom-centered symmetry functions
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ General job information:
+ -------------------------------------------------------------
+ Executing host    : KC-CHM-4KL63CY      
+ User name         : mffn3               
+ Starting date     : 13. 2.2025
+ Starting time     : 10 h 30 min 
+ Working directory :                                                             
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ Serial run requested
+ -------------------------------------------------------------
+ Reading control parameters from input.nn
+ =============================================================
+ -------------------------------------------------------------
+ =============================================================
+ General input parameters:
+ -------------------------------------------------------------
+ NNP generation                                           4
+ Short range NN is on
+ Electrostatic NN is off
+ vdW corrections switched off
+ -------------------------------------------------------------
+ RuNNer nn_type_short                                     3
+ RuNNer is started in mode for symmetry function calculation (1)
+ debugging mode is                                       F
+ parallelization mode                                     1
+ enable detailed time measurement                        F
+ using symmetry function groups                          F
+ silent mode                                             F
+ number of elements                                       2
+ elements (sorted):
+  1 H 
+  8 O 
+ seed for random number generator                     12348
+ random number generator type                             5
+ remove free atom reference energies                     T
+ remove vdw dispersion energy and forces                 F
+ upper energy threshold per atom (Ha)               100.000
+ shortest allowed bond in structure                   0.400
+ Cutoff_type for symmetry function is                     2
+ Cutoff_alpha for inner cutoff radius is              0.000
+ -------------------------------------------------------------
+ Electrostatic specifications:
+ -------------------------------------------------------------
+ electrostatic_type (nn_type_elec)                        0
+ Ewald alpha                                          0.000
+ Ewald cutoff                                         0.000
+ Ewald kmax                                               0
+ Screening electrostatics                                  3.200000     12.000000
+ -------------------------------------------------------------
+ Parameters for symmetry function generation: short range part:
+ -------------------------------------------------------------
+ using forces for fitting                                T
+ using atomic energies for fitting                       F
+ using atomic charges for fitting                        F
+ using absolute atomic spins for fitting                 F
+ -------------------------------------------------------------
+ percentage of data for testing (%)                 10.0000
+ =============================================================
+ Element pairs:   3    , shortest distance (Bohr)
+ pair    1 H  H       2.633
+ pair    2 H  O       1.688
+ pair    3 O  O       4.630
+ =============================================================
+ => electrostatic NN weights                      H        676
+ => electrostatic NN weights                      O        721
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ Atomic reference energies read from input.nn:
+ H         -0.45890731
+ O        -75.29000259
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+ -------------------------------------------------------------
+  short range atomic symmetry functions element H  :
+ -------------------------------------------------------------
+    1 H   2  H                  0.001000   0.000000  12.000000
+    2 H   2  O                  0.001000   0.000000  12.000000
+    3 H   2  H                  0.010000   0.000000  12.000000
+    4 H   2  O                  0.010000   0.000000  12.000000
+    5 H   2  H                  0.030000   0.000000  12.000000
+    6 H   2  O                  0.030000   0.000000  12.000000
+    7 H   2  H                  0.060000   0.000000  12.000000
+    8 H   2  O                  0.060000   0.000000  12.000000
+    9 H   2  O                  0.150000   0.900000  12.000000
+   10 H   2  H                  0.150000   1.900000  12.000000
+   11 H   2  O                  0.300000   0.900000  12.000000
+   12 H   2  H                  0.300000   1.900000  12.000000
+   13 H   2  O                  0.600000   0.900000  12.000000
+   14 H   2  H                  0.600000   1.900000  12.000000
+   15 H   2  O                  1.500000   0.900000  12.000000
+   16 H   2  H                  1.500000   1.900000  12.000000
+   17 H   3  O  O    0.001000  -1.000000   4.000000  12.000000
+   18 H   3  O  O    0.001000   1.000000   4.000000  12.000000
+   19 H   3  H  O    0.010000  -1.000000   4.000000  12.000000
+   20 H   3  H  O    0.010000   1.000000   4.000000  12.000000
+   21 H   3  H  O    0.030000  -1.000000   1.000000  12.000000
+   22 H   3  O  O    0.030000  -1.000000   1.000000  12.000000
+   23 H   3  H  O    0.030000   1.000000   1.000000  12.000000
+   24 H   3  O  O    0.030000   1.000000   1.000000  12.000000
+   25 H   3  H  O    0.070000  -1.000000   1.000000  12.000000
+   26 H   3  H  O    0.070000   1.000000   1.000000  12.000000
+   27 H   3  H  O    0.200000   1.000000   1.000000  12.000000
+ -------------------------------------------------------------
+  short range atomic symmetry functions element O  :
+ -------------------------------------------------------------
+    1 O   2  H                  0.001000   0.000000  12.000000
+    2 O   2  O                  0.001000   0.000000  12.000000
+    3 O   2  H                  0.010000   0.000000  12.000000
+    4 O   2  O                  0.010000   0.000000  12.000000
+    5 O   2  H                  0.030000   0.000000  12.000000
+    6 O   2  O                  0.030000   0.000000  12.000000
+    7 O   2  H                  0.060000   0.000000  12.000000
+    8 O   2  O                  0.060000   0.000000  12.000000
+    9 O   2  H                  0.150000   0.900000  12.000000
+   10 O   2  O                  0.150000   4.000000  12.000000
+   11 O   2  H                  0.300000   0.900000  12.000000
+   12 O   2  O                  0.300000   4.000000  12.000000
+   13 O   2  H                  0.600000   0.900000  12.000000
+   14 O   2  O                  0.600000   4.000000  12.000000
+   15 O   2  H                  1.500000   0.900000  12.000000
+   16 O   2  O                  1.500000   4.000000  12.000000
+   17 O   3  H  O    0.001000  -1.000000   4.000000  12.000000
+   18 O   3  O  O    0.001000  -1.000000   4.000000  12.000000
+   19 O   3  H  O    0.001000   1.000000   4.000000  12.000000
+   20 O   3  O  O    0.001000   1.000000   4.000000  12.000000
+   21 O   3  H  H    0.010000  -1.000000   4.000000  12.000000
+   22 O   3  H  H    0.010000   1.000000   4.000000  12.000000
+   23 O   3  H  H    0.030000  -1.000000   1.000000  12.000000
+   24 O   3  H  O    0.030000  -1.000000   1.000000  12.000000
+   25 O   3  O  O    0.030000  -1.000000   1.000000  12.000000
+   26 O   3  H  H    0.030000   1.000000   1.000000  12.000000
+   27 O   3  H  O    0.030000   1.000000   1.000000  12.000000
+   28 O   3  O  O    0.030000   1.000000   1.000000  12.000000
+   29 O   3  H  H    0.070000  -1.000000   1.000000  12.000000
+   30 O   3  H  H    0.070000   1.000000   1.000000  12.000000
+ -------------------------------------------------------------
+ Maximum number of atoms:          192
+ -------------------------------------------------------------
+ Calculating Symmetry Functions
+ for           20  structures
+ -------------------------------------------------------------
+ Reading charge fit data for determination of electrostatic forces
+ -------------------------------------------------------------
+ =============================================================
+ Electrostatic symmetry function values for element H 
+ Training set:  min           max       average         range 
+   1     1.70419690    2.88509621    2.23756713    1.18089931
+   2     1.02017964    1.59230667    1.31170948    0.57212703
+   3     1.17936361    2.13790088    1.62035608    0.95853727
+   4     0.76901938    1.22035287    1.00315886    0.45133349
+   5     0.60052823    1.22624371    0.88940013    0.62571549
+   6     0.48688518    0.78385522    0.63940663    0.29697004
+   7     0.28480581    0.65288360    0.44438334    0.36807778
+   8     0.31607318    0.49785824    0.41816290    0.18178506
+   9     0.29126429    0.45113211    0.35950735    0.15986782
+  10     0.31283465    0.78907976    0.51936211    0.47624511
+  11     0.23264991    0.34306146    0.27273926    0.11041154
+  12     0.18987943    0.45250122    0.28763535    0.26262179
+  13     0.15689823    0.23748288    0.19679061    0.08058465
+  14     0.09147064    0.25978305    0.15650374    0.16831241
+  15     0.04454469    0.13221563    0.08882035    0.08767094
+  16     0.01407024    0.12459478    0.05643079    0.11052455
+  17     0.00258645    0.03097969    0.01657364    0.02839324
+  18     0.00965760    0.03120953    0.01979900    0.02155193
+  19     0.00244785    0.03211150    0.01574561    0.02966365
+  20     0.08064997    0.19615365    0.13445997    0.11550368
+  21     0.00649294    0.03162694    0.01623404    0.02513400
+  22     0.00076972    0.01239513    0.00554751    0.01162541
+  23     0.04715129    0.11651159    0.07569016    0.06936030
+  24     0.00125760    0.00696243    0.00355740    0.00570482
+  25     0.00166621    0.00640300    0.00341494    0.00473679
+  26     0.01710062    0.03437715    0.02406723    0.01727654
+  27     0.00130523    0.00379304    0.00245173    0.00248781
+ =============================================================
+ Electrostatic symmetry function values for element O 
+ Training set:  min           max       average         range 
+   1     2.14106529    3.24178267    2.62341895    1.10071738
+   2     0.69528394    1.22704739    0.94921828    0.53176345
+   3     1.61848162    2.48287374    2.00631771    0.86439213
+   4     0.43967528    0.84819224    0.64440275    0.40851696
+   5     1.01746177    1.62350189    1.27881326    0.60604013
+   6     0.17348193    0.42893010    0.29482592    0.25544818
+   7     0.68089668    1.03976202    0.83632580    0.35886535
+   8     0.05096269    0.16821754    0.10369390    0.11725485
+   9     0.59879602    0.84707631    0.71901470    0.24828029
+  10     0.23021385    0.71033985    0.45180528    0.48012599
+  11     0.48343402    0.61516903    0.54547851    0.13173501
+  12     0.11468589    0.50413769    0.28998965    0.38945180
+  13     0.32308047    0.45194128    0.39358121    0.12886081
+  14     0.02942045    0.31791524    0.15140645    0.28849479
+  15     0.11433930    0.23780906    0.17764071    0.12346976
+  16     0.00056059    0.12154957    0.03610043    0.12098898
+  17     0.00592150    0.02631478    0.01439422    0.02039328
+  18     0.00012873    0.00149910    0.00056530    0.00137038
+  19     0.10464700    0.27639300    0.18322611    0.17174600
+  20     0.00397282    0.01739870    0.00931123    0.01342588
+  21     0.01341316    0.04340235    0.02880108    0.02998919
+  22     0.03498921    0.11116190    0.06616712    0.07617270
+  23     0.02759331    0.06987800    0.04685231    0.04228469
+  24     0.00176415    0.01279951    0.00561221    0.01103536
+  25     0.00002986    0.00062617    0.00019651    0.00059632
+  26     0.02512488    0.08402467    0.04507188    0.05889979
+  27     0.01325366    0.05819916    0.03080740    0.04494550
+  28     0.00010811    0.00157520    0.00056143    0.00146708
+  29     0.01171016    0.02268921    0.01649386    0.01097905
+  30     0.00578667    0.01871109    0.01098831    0.01292442
+ -------------------------------------------------------------
+  Minimum and Maximum charges from scalinge.data:
+ H          0.1060870000        0.1823750000
+ O         -0.3483330000       -0.2017430000
+ -------------------------------------------------------------
+           1  Point is used for testing            1
+           2  Point is used for training            1
+           3  Point is used for training            2
+           4  Point is used for training            3
+           5  Point is used for training            4
+           6  Point is used for training            5
+           7  Point is used for training            6
+           8  Point is used for training            7
+           9  Point is used for training            8
+          10  Point is used for training            9
+          11  Point is used for training           10
+          12  Point is used for training           11
+          13  Point is used for training           12
+          14  Point is used for training           13
+          15  Point is used for training           14
+          16  Point is used for training           15
+          17  Point is used for training           16
+          18  Point is used for testing            2
+          19  Point is used for training           17
+          20  Point is used for training           18
+ -------------------------------------------------------------
+ Number of fitting points:           18
+ Number of testing points:            2
+ Number of rejected points:           0
+ -------------------------------------------------------------
+ Total runtime (s)  :          6.800
+ Total runtime (min):          0.113
+ Total runtime (h)  :          0.002
+ Normal termination of RuNNer
+ -------------------------------------------------------------
