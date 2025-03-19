@@ -56,7 +56,7 @@ global_hidden_layers_short 2
 global_nodes_short 20 20
 global_activation_short t t l
 global_hidden_layers_electrostatic 2
-global_nodes_electrostatic 15 15
+global_nodes_electrostatic 20 20
 global_activation_electrostatic t t l
 
 ########################################################################################################################
